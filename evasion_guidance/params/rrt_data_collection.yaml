@@ -1,0 +1,27 @@
+env:
+  map_range: 1000
+  radar_radius: 100
+  min_num_radar: 30
+  max_num_radar: 50
+  seperation_radius_bounds: [100, 150]
+  radar_minimal_separatin_dist_bounds: [50, 100]
+
+planner:
+  serach_center_parameters:
+    num_boundary_sample: 3
+    bloat_radius: 10
+  V: 30.0  # Speed of the aircraft
+  L1: 50.0  # L1 used in tracking controller
+  delta_t: 0.5 # delta t
+  max_iter: 300 # Max number of iterations of running the loop
+  search_radius: 50
+  risk_buffer_length: 10
+  connect_circle_dist: 500
+  min_dist_to_risk_radius_ratio: 3.0
+  min_search_center_num: 3
+
+data_collection:
+  collection_loop_num: 3
+  repeat_each_goal: 1
+  random_sample: True
+  output_path: /home/lucas/Workspace/RealTimePoseAwarePlanning/evasion_guidance/data_rrt/
