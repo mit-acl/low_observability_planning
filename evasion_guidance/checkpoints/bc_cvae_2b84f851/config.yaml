@@ -1,0 +1,18 @@
+data:
+  coarse_data_path: /home/lucas/Workspace/evasion_guidance/data_rrt
+  num_data: 1000
+  params_path: /home/lucas/Workspace/evasion_guidance/evasion_guidance/params
+  refined_data_path: /home/lucas/Workspace/evasion_guidance/data_metropolis
+  training_data_ratio: 0.9
+device: cuda
+model:
+  cvae_latent_dim: 16
+  hidden_dim: 64
+name: bc
+project: evasion
+run_name: bc_cvae_2b84f851
+train:
+  batch_size: 32
+  kl_weight: 10.0
+  lr: 0.001
+  num_epochs: 300
