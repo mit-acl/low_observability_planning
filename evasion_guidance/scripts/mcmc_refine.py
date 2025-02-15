@@ -48,7 +48,6 @@ def main(rrt_config, mcmc_config):
         x0.extend([[p[0], p[1]] for p in zip(x[1::10], y[1::10])])
         x0.append(path[-1, :-1])
         xt = np.asarray(x0).flatten()
-        print("Xt shape: ", xt.shape)
 
         cov = 20*np.eye(2*len(x0))
         cov[:2, :2] = np.zeros((2, 2))

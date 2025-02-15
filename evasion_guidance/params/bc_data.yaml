@@ -2,3 +2,4 @@ env:
   img_size: 100
   radar_radius: 100
   aircraft_detection_range: 100
+

@@ -4,11 +4,11 @@ data:
   rrt_data_path: /home/lucas/Workspace/RealTimePoseAwarePlanning/evasion_guidance/data_rrt
   mcmc_data_path: /home/lucas/Workspace/RealTimePoseAwarePlanning/evasion_guidance/data_mcmc
   params_path: /home/lucas/Workspace/RealTimePoseAwarePlanning/evasion_guidance/params
-  num_data: 1000
+  num_data: 5
   training_data_ratio: 0.8
 
 train:
-  batch_size: 64
+  batch_size: 1
   num_epochs: 300
   lr: 0.001
   kl_weight: 10.0

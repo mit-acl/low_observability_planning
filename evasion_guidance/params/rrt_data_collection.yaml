@@ -21,7 +21,7 @@ planner:
   min_search_center_num: 3
 
 data_collection:
-  collection_loop_num: 3
+  collection_loop_num: 5
   repeat_each_goal: 1
   random_sample: True
   output_path: /home/lucas/Workspace/RealTimePoseAwarePlanning/evasion_guidance/data_rrt/
